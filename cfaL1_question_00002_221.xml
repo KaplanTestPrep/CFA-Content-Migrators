@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/imsqti_v2p1.xsd"
+                identifier="cfaL1_question_00002_221"
+                title="Question"
+                timeDependent="false"
+                adaptive="false">
+   <!--Source file (learning_question): C:\Users\JorMiller\AppData\Local\Temp\OxygenXMLTemp\ditaTemporaryOutputDir-1589999105094\t1\t2\t3\t4\t5\schwesernotes\book_1\questions\cfaL1_question_00002_221.dita.-->
+   <responseDeclaration cardinality="single" identifier="Q2">
+      <correctResponse>
+         <value>A</value>
+      </correctResponse>
+      <mapping defaultValue="0">
+         <mapEntry mapKey="A" mappedValue="1"/>
+         <mapEntry mapKey="B" mappedValue="0"/>
+         <mapEntry mapKey="C" mappedValue="0"/>
+      </mapping>
+   </responseDeclaration>
+   <itemBody>
+      <p>A professional code of conduct:</p>
+      <choiceInteraction responseIdentifier="Q2" maxChoices="1" shuffle="true">
+         <simpleChoice identifier="A">can increase public trust in the profession.</simpleChoice>
+         <simpleChoice identifier="B">guarantees that members will adhere to a minimum level of ethical conduct.</simpleChoice>
+         <simpleChoice identifier="C">includes standards that provide guidance for specific behaviors.</simpleChoice>
+      </choiceInteraction>
+   </itemBody>
+   <responseProcessing template="explanationTemplate.xml"/>
+   <modalFeedback outcomeIdentifier="EXPLANATION"
+                  identifier="completed"
+                  showHide="show">
+      <p>A professional code of conduct communicates to the public that members have promised to uphold a minimum level of ethical conduct when acting for clients. This is no guarantee that all members will follow the code at all times. A code of conduct may include specific standards of behavior or only state principles of conduct without specific standards or guidance. (LOS 1.b)</p>
+   </modalFeedback>
+</assessmentItem>
