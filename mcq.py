@@ -1,6 +1,8 @@
 import xmltodict
 import json
 import pprint
+import mcqData
+
 from collections import OrderedDict 
 def transformmcq():
     with open("cfaL1_question_00002_221.xml") as fd:
@@ -11,6 +13,8 @@ def transformmcq():
     test = doc['assessmentItem']['responseDeclaration']['correctResponse'] 
     data = OrderedDict()
     data = test
+    testdata = mcqData.MCQ()
+    testdata.author ="Satish"
     for key, value in data.items():
         print(key, value) 
 transformmcq()
