@@ -407,3 +407,22 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# def deserialize(xml_bytes: bytes) -> etree.ElementTree:
+#     """
+#     Deserializes an XML bytestream, in the context of an XSD.
+#     :param xml_bytes: XML document, which may specify encoding
+#     :param xsd_path: path to XSD on local disk
+#     :return: deserialized ElementTree
+#     """
+#     base_path = Path(__file__).parent
+#     file_path = (base_path / "sampleFiles/mcqFiles/toc.xml").resolve()
+#     xsd_path = file_path
+
+#     with open(xsd_path) as xsd_file:
+#         schema = etree.XMLSchema(etree.parse(xsd_file))
+
+#     deserialized = etree.fromstring(xml_bytes)
+#     schema.assertValid(deserialized)
+    
+#     return deserialized    

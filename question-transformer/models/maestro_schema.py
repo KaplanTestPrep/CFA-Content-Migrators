@@ -1,7 +1,7 @@
-class MCQ():
+class mcq():
     def __init__(self):
         self.author = ""
-        self.content = Content()
+        self.content = content()
         self.id = ""
         self.internal_reference = ""
         self.item_id = ""
@@ -19,7 +19,7 @@ class MCQ():
         self.created_at = ""
         self.updated_at = ""
 
-class Content():
+class content():
     def __init__(self):
         self.active = ""
         self.created_at = ""
@@ -34,13 +34,13 @@ class Content():
         self.tags = [] #same as Items tags
         self.updated_at = ""
 
-class Items():
+class items():
     def __init__(self):
         self.active = ""
         self.created_at = ""
         self.default_value = ""
         self.id = ""
-        self.interactions = Interactions()
+        self.interactions = ""
         self.explanations = []
         self.kaplan_type = ""
         self.max_score = ""
@@ -55,7 +55,7 @@ class Items():
         self.tags =[]
         self.updated_at = ""
 
-class Explanations():
+class explanations():
     def __init__(self):
         self.active = "True"
         self.content = "" #Explanation text
@@ -71,11 +71,11 @@ class Explanations():
         self.title = ""
         self.updated_at = ""
 
-class Interactions():
+class interactions():
     def __init__(self):
-        self.interactions = m001040_interaction_1()
+        self.m001040_interaction_1 = interaction()
 
-class m001040_interaction_1():
+class interaction():
     def __init__(self):
         self.active = ""
         self.case_sensitive = ""
@@ -99,7 +99,7 @@ class m001040_interaction_1():
         self.updated_at = ""
         self.response_options = []
 
-class ResponseOptions():
+class responseOptions():
     def __init__(self):
         self.active = ""
         self.content = ""
@@ -116,7 +116,7 @@ class ResponseOptions():
         self.updated_at = ""
         self.value = ""
 
-class Tags():
+class tag():
     def __init__(self):
         self.created_at = ""
         self.id = ""

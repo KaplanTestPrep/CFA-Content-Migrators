@@ -4,15 +4,14 @@ import json
 class ditamapParsing():
     
     def parseDitamap(file_path):
+
             ditaList = []
             with open(file_path) as ditamap:
                     mapTopicHead = xmltodict.parse(ditamap.read())
-                    object = json.dumps(mapTopicHead)
                     if mapTopicHead != None:
                             ditamapParsing.parseTaxonomy1(mapTopicHead["map"]["topichead"], ditaList)
                             return ditaList
                 
-                                            
     def parseTaxonomy1(taxonomy1List, ditaList):
             if taxonomy1List != None and len(taxonomy1List) > 0:
                     for taxonomy1 in taxonomy1List:
